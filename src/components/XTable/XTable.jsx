@@ -11,7 +11,6 @@ const XTable = () => {
     ];
     
     const [data,setData] = useState(initialData);
-    const [type, setType] = useState(null);
 
     const sortByDate = () => {
         const sortedData = [...data].sort((a,b)=> {
@@ -20,7 +19,6 @@ const XTable = () => {
         });
 
         setData(sortedData);
-        setType('date');
     }
 
     const sortByViews = () => {
@@ -30,7 +28,6 @@ const XTable = () => {
         });
 
         setData(sortedData);
-        setType('views');
     }
     
   return (
